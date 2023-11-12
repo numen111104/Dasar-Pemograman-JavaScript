@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ternary Operation</title>
+  </head>
+  <body>
+    <label for="nilai">Input Nilai</label>
+    <input type="text" id="nilai" />
+    <button onclick="scoreChecker()">Cek Passion</button>
+    <button onclick="penggabungan()">Cek Pengulangan</button>
+    <p id="hasil"></p>
+    <script>
+      let pelanggan = false;
+      let isBuy = pelanggan ? 0.1 : 0;
+      console.log(
+        `Selamat kamu mendapatkan diskon segede gaban yaitu ${isBuy * 100}%`
+      );
+
+      /**
+       * TODO:
+       * Buatlah variabel firstName, lastName, age, isMarried dengan ketentuan:
+       *  - firstName: bertipe data string, dengan nilai "John".
+       *  - lastName: bertipe data string, dengan nilai "Doe".
+       *  - age: bertipe data number, dengan nilai 25.
+       *  - isMarried: bertipe data boolean, dengan nilai true.
+       */
+
+      // Tulis kode di bawah ini
+      let firstName = "John ";
+      let lastName = "Doe";
+      let age = 25;
+      let isMarried = true;
+      let status = isMarried ? "Sudah Menikah" : "Belum Menikah";
+
+      console.log(
+        `Halo nama saya ${firstName}${lastName}, Saya berumur ${age} tahun, dan saya saat ini ${status}`
+      );
+
+      // Quiz 2
+      const scoreChecker = () => {
+        let inputNilai = document.querySelector("#nilai").value;
+        let result = null;
+        let hasil = document.querySelector("#hasil");
+
+        if (inputNilai >= 90) {
+          hasil.innerHTML = "Selamat! Anda mendapatkan nilai A.";
+        } else if (inputNilai >= 80 && inputNilai <= 89) {
+          hasil.innerHTML = "Anda mendapatkan nilai B.";
+          // } else if (inputNilai ){
+        } else {
+          hasil.innerHTML = "Maaf anda tidak layak";
+        }
+      };
+
+      const penggabungan = () => {
+        let output = document.querySelector("#hasil");
+        let maxLoop = 20;
+        for (let count = 1; count <= maxLoop; count++) {
+          if (count >= 2) {
+            output.innerHTML = count + "Nu'man Nasyar MZ";
+          } else if (count >= 10) {
+            output.innerHTML = count + "Talha Cukai";
+          } else {
+            output.innerHTML = count + "Normal";
+          }
+        }
+      };
+      for (let i = 0; i < 10; i++) {
+        if (i % 2 !== 0) {
+          console.log(i);
+        }
+      }
+    </script>
+    <script src="object.js"></script>
+    <script src="array.js"></script>
+  </body>
+</html>
