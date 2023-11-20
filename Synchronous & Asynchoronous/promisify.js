@@ -1,4 +1,4 @@
-const { promisify } = require('util');
+const { promisify } = require('utils');
  
 function getUsers(isOffline, callback) {
   // simulate network delay
