@@ -1,0 +1,22 @@
+{
+  "name": "numenide",
+  "version": "1.0.0",
+  "description": "Love JS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "author": "Nu'man Nasyar MZ",
+  "license": "ISC",
+  "dependencies": {
+    "ludash": "^0.1.0-pre"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
