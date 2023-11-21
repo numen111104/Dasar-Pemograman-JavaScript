@@ -15,8 +15,5 @@
   "license": "ISC",
   "dependencies": {
     "ludash": "^0.1.0-pre"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "name": "latihan-testing",
+  "version": "1.0.0",
+  "description": "\"Kali ini kita akan belajar beberapa cara untuk membuat testing pada kodingan kita\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "LatihanTesting",
+    "TestingJavaScript"
+  ],
+  "author": "Numan Nasyar MZ",
+  "license": "ISC"
+}
